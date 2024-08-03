@@ -139,7 +139,7 @@ include 'navbar.php';
 <section id="single1" class="section-p1">
 <!-- Smartphone -->
  <div class="headline text-center">
-  <h2>Smart</h2>
+  <h2>Smartphone</h2>
  </div>
   <div class="product-container product-list">
       <?php
