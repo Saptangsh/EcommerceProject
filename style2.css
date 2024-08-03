@@ -1,0 +1,9 @@
+   /* FOOTER */
+.sub-title{
+  color: white;
+
+}
+
+.sub-title li a :hover{
+  color: pink;
+}

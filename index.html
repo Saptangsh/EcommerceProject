@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+ <!--  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon"> -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping
+            This Week Order Over - <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;500</b>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <!-- <select name="currency">
+
+            <option value="usd">USD </option>
+            <option value="eur">EUR</option>
+
+          </select> -->
+
+          <!-- <select name="language">
+
+            <option value="en-US"></option>
+            <option value="es-ES"></option>
+            <option value="fr"></option>
+
+          </select> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo5.png" alt="Anon's logo" width="120" height="50">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" id="secrch-item" class="search-field" placeholder="Enter your product name..." onkeyup="search()">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <a class="btn action-btn" href="login.html">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.html" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electronics</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="smartphone.html">Smartphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="laptop.html">Laptop</a>
+                </li>
+
+
+                <li class="panel-list-item">
+                  <a href="headphone.html">Headphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="smart-watch.html">Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Men's</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Shirt</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">T-shirt & jeans</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Blazer</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="sunglasses.html">Sunglasses</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Women's</a>
+                </li>
+
+
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Earrings</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Necklace</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Bags</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Gaming</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="graphics-card.html">Graphics card</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="keyboard.html">Keyboard</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="mouse.html">Mouse</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="headphone.html">Headphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Shirt</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">T-shirt & Jeans</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Blazer</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="sunglasses.html">Sunglasses</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Casual</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Earrings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Necklace</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bags</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="smartphone.html" class="menu-title">Smartphone</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="smartphone.html">Redmi</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="smartphone.html">Realme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="smartphone.html">Samsung</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="laptop.html" class="menu-title">Laptop</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="laptop.html">Dell</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="laptop.html">HP</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Gaming</a>
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="graphics-card.html">Graphics Card</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="keyboard.html">Keyboard</a>
+              </li>
+              
+
+              <li class="dropdown-item">
+                <a href="mouse.html">Mouse</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="headphone.html">Headphone</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="home.html" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="shirt.html" class="submenu-title">Shirt</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="" class="submenu-title">T-shirt & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Blazer</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="sunglasses.html" class="submenu-title">Sunglasses</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Casual</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bags</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+            <li class="menu-category">
+    
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Electronics</p>
+    
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+              </button>
+    
+              <ul class="submenu-category-list" data-accordion>
+    
+                <li class="submenu-category">
+                  <a href="smartphone.html" class="submenu-title">Smartphone</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="laptop.html" class="submenu-title">Laptop</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="headphone.html" class="submenu-title">Headphone</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="smart-watch.html" class="submenu-title">Watches</a>
+                </li>
+    
+              </ul>
+    
+            </li>
+
+            <li class="menu-category">
+    
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Gaming</p>
+    
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+              </button>
+    
+              <ul class="submenu-category-list" data-accordion>
+    
+                <li class="submenu-category">
+                  <a href="graphics-card.html" class="submenu-title">Graphic's Card</a>
+                </li>
+    
+                <li class="submenu-category">
+                  <a href="keyboard.html" class="submenu-title">Keyboard</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="mouse.html" class="submenu-title">Mouse</a>
+                </li>
+    
+              </ul>
+    
+            </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Contact</a>
+        </li>
+
+      </ul>
+
+     
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+ 
+  <!-- <div class="banner">
+  <div class="container">
+  <div class="container-banner">
+    <div class="wrapper">
+      <img src="./assets/images/banner-1.jpg" alt="">
+      <img src="./assets/images/banner-2.jpg" alt="">
+      <img src="./assets/images/banner-3.jpg" alt="">
+      <img src="./assets/images/banner-3.jpg" alt="">
+    </div>
+  </div>
+</div>
+</div> -->
+  <!-- sidenavbar
+ -->
+ <div class="sidebar  has-scrollbar" data-mobile-menu>
+  <div class="sidebar-category">
+    <div class="sidebar-top">
+      <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+        <!-- <ion-icon name="close-outline"></ion-icon> -->
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--  -Carousel- -->
+ <!-- Banner -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./assets/images/banner-4.jpg" style="width:100%">
+      <!-- <div class="b1">Caption Text</div> -->
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./assets/images/banner-5.jpg" style="width:100%">
+      <!-- <div class="b1">Caption Two</div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./assets/images/banner-6.jpeg" style="width:100%">
+      <!-- <div class="b1">Caption Two</div> -->
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+<!-- Product -->
+<!-- Cart Section -->
+                               
+</div>
+<br>
+<div class="pro1 cart">
+
+        <center>
+          <div class="row p-2 ">
+
+            <div class="headline text-center">
+                      <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                      section-title ">Smart Phone</h2></div><br>
+
+                  <div class="shop-content product-list">
+
+                    <div class=" product product-box ">
+                      <img src="assets/images/redmi12.webp" alt="" class="product-img">
+                      <h2 class="product-title">Redmi</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">REDMI 12 (Moonstone Silver, 128 GB) (4GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>11000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/redminote125g.webp" alt="" class="product-img" style="max-width: 500px;">
+                      <h2 class="product-title">Redmi</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">REDMI Note 12 5G (Jade Black, 128 GB)  (6GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>15000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/redmia2.webp" alt="" class="product-img">
+                      <h2 class="product-title">REDMI</h2><br>
+                      <h2 class="product-title" style="font-weight: 400;">REDMI A2+ (Aqua Blue, 128 GB) (4GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>8500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                      <img src="assets/images/redmi12c.webp" alt="" class="product-img">
+                      <h2 class="product-title">Redmi</h2><br>
+                      <h2 class="product-title" style="font-weight: 400;">REDMI 12C (Lavender Purple, 64 GB) (4GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>7500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                      <img src="assets/images/realmenarzo50-5g.webp" alt="" class="product-img">
+                      <h2 class="product-title">Realme</h2>
+                      <div class="rp">
+                      <h2 class="product-title" style="font-weight: 400">realme narzo 50 5G (Hyper Black, 64 GB)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>15,000</span></div>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                       <img src="assets/images/realme11x5g.webp" alt="" class="product-img">
+                      <h2 class="product-title">Realme</h2>
+                      <div class="rp">
+                      <h2 class="product-title" style="font-weight: 400">realme 11x 5G (Purple Dawn, 128 GB) (8GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>16,000</span></div>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                      <img src="assets/images/realmenarzo60-5g.webp" alt="" class="product-img">
+                      <h2 class="product-title">Realme</h2>
+                      <h2 class="product-title" style="font-weight: 400">realme narzo 60 5G (Cosmic Black, 128 GB) (8GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>18,000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/realmec51.webp" alt="" class="product-img">
+                      <h2 class="product-title">Realme</h2>
+                      <h2 class="product-title" style="font-weight: 400">realme C51 (Carbon Black, 64 GB)  (4 GB RAM)</h2>
+                      <div class="rp">
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>8,500</span></div>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/samsunggalaxyf-13.webp" alt="" class="product-img">
+                      <h2 class="product-title">Samsung</h2>
+                      <h2 class="product-title" style="font-weight: 400">SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB) (4GB RAM)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>8,500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/samsungm-14-5g.webp" alt="" class="product-img">
+                      <h2 class="product-title">Samsung</h2>
+                      <h2 class="product-title" style="font-weight: 400">SAMSUNG Galaxy M14 5G (Smoky Teal, 128 GB) (6GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>14,000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/samsungm-13.webp" alt="" class="product-img">
+                      <h2 class="product-title">Samsung</h2>
+                      <h2 class="product-title" style="font-weight: 400">Samsung Galaxy M13 (Midnight Blue, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>8500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/samsunggalaxym04.webp" alt="" class="product-img">
+                      <h2 class="product-title">Samsung</h2>
+                      <h2 class="product-title" style="font-weight: 400">SAMSUNG Galaxy F04 (Dark, 64 GB) (4GB Ram)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>6500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                  </div>
+
+          </div>
+</div>
+
+
+<!--  __Laptop__ -->
+
+<div class="pro1" style="margin-top: -15%;">
+
+        <center>
+          <div class="row p-2 ">
+
+            <div class="headline text-center " style="margin-top: 25%">
+                      <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                      section-title ">Laptop</h2></div><br>
+        </center>
+
+                  <div class="shop-content product-list">
+
+                    <div class=" product product-box ">
+                      <img src="assets/images/dellinapironcorei-3.webp" alt="" class="product-img">
+                      <h2 class="product-title">DELL</h2><br><br>
+                      <h2 class="product-title" style="font-weight: 400">DELL Inspiron Core i3 11th Gen 1115G4 - (8 GB/512 GB SSD/Windows 11 Home) INSPIRON 3511 Thin and Light...</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>37,000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/dellinapironcorei-5.webp" alt="" class="product-img">
+                      <h2 class="product-title">DELL</h2><br><br>
+                      <h2 class="product-title" style="font-weight: 400">DELL Inspiron Core i5 11th Gen 1135G7 - (16 GB/512 GB SSD/Windows 11 Home) INSPIRON 3511 Thin and Ligh...</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>52,000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                      <img src="assets/images/hpvictuscorei-5.webp" alt="" class="product-img">
+                      <h2 class="product-title">HP</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">HP Victus Core i5 11th Gen 11400H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX...</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>57,800</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/hpintelcorei-3.webp" alt="" class="product-img">
+                      <h2 class="product-title">HP</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">HP Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) 15s-fq5007TU Thin and Light Laptop</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>40,000</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+
+              </div>
+
+    </div>
+    </div>
+
+ </div><br><br>
+
+<!-- Headphone -->
+
+<div class="pro1">
+
+        <center>
+          <div class="row p-2" style="margin-top: 2%;">
+
+            <div class="headline text-center">
+                      <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                      section-title ">Headphone</h2></div><br></center>
+
+                  <div class="shop-content product-list">
+
+                    <div class=" product product-box ">
+                      <img src="assets/images/boatnirvana751.jpg" alt="" class="product-img">
+                      <h2 class="product-title">BOAT</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">boAt Nirvana 751 ANC Hybrid Active Noise Cancelling Bluetooth Wireless Over Ear Headphones with Up to 65H Playtime, ASAP Charge, Ambient Sound Mode, Immersive Sound, Carry Pouch(Gunmetal Grey)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>3,500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/boatrockerz450.webp" alt="" class="product-img">
+                      <h2 class="product-title">Boat</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1,500</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                     <div class="product product-box mb-2">
+                      <img src="assets/images/jbltune510bt.webp" alt="" class="product-img">
+                      <h2 class="product-title">JBL</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">JBL Tune 720BT Wireless Over Ear Headphones with Mic, Pure Bass Sound, Upto 76 Hrs Playtime, Speedcharge, Dual Pairing, Customizable Bass with Headphones App, Lightweight, Bluetooth 5.3 (Blue)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class=" fa-solid fa-star rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2,800</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+                    <div class="product product-box mb-2">
+                      <img src="assets/images/infinityjbltranz710.webp" alt="" class="product-img">
+                      <h2 class="product-title">INFINITY</h2><br>
+                      <h2 class="product-title" style="font-weight: 400">Infinity - JBL Tranz 710, 72 Hrs Playtime with Quick Charge, Wireless On Ear Headphone with Mic, Deep Bass, Dual Equalizer, Bluetooth 5.0 with Voice Assistant Support (Black)</h2>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-solid fa-star rating"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                      <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1,400</span>
+                      <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                    </div>
+
+              </div><br><br>
+
+
+              <center>
+                    <div class="row p-2 " style="margin-top: 2%;">
+
+                      <div class="headline text-center " >
+                                <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                                section-title ">Smart Watch</h2></div><center><br>
+
+                            <div class="shop-content product-list">
+
+                              <div class=" product product-box col-xl-4 col-lg-3 ">
+                                <img src="assets/images/sw1.webp" alt="" class="product-img">
+                                <h2 class="product-title">Fastrack</h2><br><br>
+                                <h2 class="product-title" style="font-weight: 400">Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ WatchFaces Smartwatch  (Black Strap, Free Size)</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1499</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/sw2.webp" alt="" class="product-img">
+                                <h2 class="product-title">boAt Wave Elevate</h2><br><br>
+                                <h2 class="product-title" style="font-weight: 400">Boult Crown 1.95'' Screen, BT Calling, Working Crown, Zinc Alloy Frame, 900 Nits, SpO2 Smartwatch  (Orange Strap, Free Size)
+                                </h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1599</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                               <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/sm3.webp" alt="" class="product-img">
+                                <h2 class="product-title">beatXP</h2><br>
+                                <h2 class="product-title" style="font-weight: 400">beatXP Vega Neo 1.43” AMOLED Bluetooth Calling Smartwatch  (Ice Silver Strap, Free Size)</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class=" fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1499</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/sw4.webp" alt="" class="product-img">
+                                <h2 class="product-title">CMF Watch Pro</h2><br>
+                                <h2 class="product-title" style="font-weight: 400">Noise Vision 3 with 1.96" AMOLED display with Thin Bezel, Metallic Build Smartwatch  (Classic Black Strap, Regular) GB/512 
+                                </h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1299</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+                        </div>
+
+                  <center><br><br>
+
+                  <div class="row p-2 " style="margin-top: 2%;">
+
+                      <div class="headline text-center ">
+                                <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                                section-title ">Mouse</h2></div><br></div></center>
+
+                            <div class="shop-content product-list">
+
+                              <div class=" product product-box col-xl-4 col-lg-3 ">
+                                <img src="assets/images/dellms116mouse.jpg" alt="" class="product-img">
+                                <h2 class="product-title" >DELL</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">Dell MS116 1000Dpi USB Wired Optical Mouse, Led Tracking, Scrolling Wheel, Plug and Play.</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><br><br><br><i class="fa-solid fa-indian-rupee-sign"></i>310</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/logitechm221mouse.webp" alt="" class="product-img">
+                                <h2 class="product-title">LOGITECH</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">Logitech M221 Wireless Mouse, Silent Buttons, 2.4 GHz with USB Mini Receiver, 1000 DPI Optical Tracking, 18-Month Battery Life, Ambidextrous PC/Mac/Laptop - Charcoal Grey</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>800</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                               <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/hpm270mouse.webp" alt="" class="product-img">
+                                <h2 class="product-title">HP</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">HP M270 Backlit USB Wired Gaming Mouse with 6 Buttons, 4-Speed Customizable 2400 DPI, Ergonomic Design, Breathing LED Lighting, Metal Scroll Wheel, Lightweighted </h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class=" fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2,800</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/logitechg402mouse.webp" alt="" class="product-img">
+                                <h2 class="product-title">LOGITECH</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">Logitech G402 Hyperion Fury USB Wired Gaming Mouse, 4,000 DPI, Lightweight, 8 Programmable Buttons, Compatible for PC/Mac - Black</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1,400</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/hpwiredmouse100.webp" alt="" class="product-img">
+                                <h2 class="product-title">HP</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">HP Wired Mouse 100 with 1600 DPI Optical Sensor, USB Plug-and -Play,ambidextrous Design, Built-in Scrolling and 3 Handy Buttons. 3-Years Warranty (6VY96AA)</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>230</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+                      </div>   
+
+                <center>
+                    <div class="row p-2 "style="margin-top: 2%;"></center>
+
+                      <div class="headline text-center " style="margin-top: 2%">
+                                <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                                section-title ">Keyboard</h2></div><br>
+
+                            <div class="shop-content product-list">
+
+                              <div class=" product product-box col-xl-4 col-lg-3 ">
+                                <img src="assets/images/dellkb216.webp" alt="" class="product-img">
+                                <h2 class="product-title">DELL</h2>
+                                <h2 class="product-title" style="font-weight: 400;">Dell KB216/KB216d1 Wired Multimedia USB Keyboard with Super Quite Plunger Keys with Spill-Resistant – Black</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>570</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/hpkb300.jpg" alt="" class="product-img">
+                                <h2 class="product-title">HP</h2>
+                                <h2 class="product-title" style="font-weight: 400;">HP K300 Backlit Membrane Wired Gaming Keyboard with Mixed Color Lighting, 4 LED Indicators, Matte Finish Double Injection Key Caps and Windows Lock Key</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>650</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/zebronicskm2-100.webp" alt="" class="product-img">
+                                <h2 class="product-title">ZEBRONICS</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">Zebronics ZEB-KM2100 Multimedia USB Keyboard Comes with 114 Keys Including 12 Dedicated Multimedia Keys & with Rupee Key</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/logitechkbk380.jpg" alt="" class="product-img">
+                                <h2 class="product-title">LOGITECH</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">Logitech K380 Wireless Multi-Device Keyboard Pc/Mac/Laptop/<br>Smartphone/Tablet (Blue)</h2>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2,600</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+                        </div><br><br>
+
+                  <center>
+                    <div class="row p-2 " style="margin-top: 2%;">
+
+                      <div class="headline text-center ">
+                                <h2 class="pb-2 position-relative d-inline-block text-center text-3xl font-bold pt-5
+                                section-title ">Graphics Card</h2></div></center><br>
+
+                            <div class="shop-content product-list">
+
+                              <div class=" product product-box col-xl-4 col-lg-3 ">
+                                <img src="assets/images/gc1.webp" alt="" class="product-img">
+                                <h2 class="product-title font-bold">ZEBRONICS</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">ZEBRONICS NVIDIA ZEB-GT610 2 GB DDR3 Graphics Card  (Black)</h2>
+                                <div class="rp">
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2959</span></div>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/gc2.webp" alt="" class="product-img">
+                                <h2 class="product-title font-bold">GIGABYTE</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">GIGABYTE NVIDIA GV-N1656WF2OC-4GD 4 GB GDDR6 Graphics Card  (Black)
+                                </h2>
+                                <div class="rp">
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>14990</span></div>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                               <div class="product product-box col-xl-4 col-lg-3 mb-2"><br>
+                                <img src="assets/images/gc3.webp" alt="" class="product-img" style="margin-top: 8px;">
+                                <h2 class="product-title font-bold">ZOTAC</h2><br>
+                                <h2 class="product-title" style="font-weight: 400;">ZOTAC NVIDIA RTX 3060 Twin Edge 12 GB GDDR6 Graphics Card  (Black)
+                                </h2><br><br>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class=" fa-solid fa-star rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>13100</span>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+
+                              <div class="product product-box col-xl-4 col-lg-3 mb-2">
+                                <img src="assets/images/gc4.webp" alt="" class="product-img">
+                                <h2 class="product-title font-bold">GIGABYTE</h2>
+                                <br><br>
+                                <h2 class="product-title" style="font-weight: 400;">GIGABYTE NVIDIA GV-N710D3-2GL 2 GB DDR3 Graphics Card (Black)
+                                GB/512 </h2>
+                                <div class="rp">
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-solid fa-star rating"></i>
+                                <i class="fa-sharp fa-solid fa-star-half-stroke rating"></i><br>
+                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>3529</span></div>
+                                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+                              </div>
+                        </div>
+            </div>
+
+              </div>
+
+            </div>
+
+</div><br><br><br>
+                 
+    <!-- Footer -->          
+              <footer>
+                <div class="footer-nav">
+              
+                  <div class="container">
+              
+                    <ul class="footer-nav-list">
+              
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Popular Categories</h2>
+                      </li>
+              
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                      </li>
+              
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Electronic</a>
+                      </li>
+              
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Cosmetic</a>
+                      </li>
+              
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Health</a>
+                      </li>
+              
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Watches</a>
+                      </li>
+              
+                    </ul>
+              
+                    <ul class="footer-nav-list">
+                    
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                      </li>
+                    
+                    </ul>
+              
+                    <ul class="footer-nav-list">
+                    
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and conditions</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About us</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure payment</a>
+                      </li>
+                    
+                    </ul>
+              
+                    <ul class="footer-nav-list">
+                    
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                      </li>
+                    
+                      <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                      </li>
+                    
+                    </ul>
+              
+                    <ul class="footer-nav-list">
+              
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                      </li>
+              
+                      <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                          <ion-icon name="location-outline"></ion-icon>
+                        </div>
+              
+                        <address class="content">
+                          27G Raja SC Mullick Road
+                          Garia,&nbsp;Kolkata(WB),&nbsp;700047,&nbsp;India
+                        </address>
+                      </li>
+              
+                      <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                          <ion-icon name="call-outline"></ion-icon>
+                        </div>
+              
+                        <a href="tel:+84201-58140" class="footer-nav-link">91-8420158140</a>
+                      </li>
+              
+                      <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                          <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+              
+                        <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+                      </li>
+              
+                    </ul>
+              
+                    <ul class="footer-nav-list">
+              
+                      <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                      </li>
+              
+                      <li>
+                        <ul class="social-link">
+              
+                          <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                          </li>
+              
+                          <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                          </li>
+              
+                          <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                          </li>
+              
+                          <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                          </li>
+              
+                        </ul>
+                      </li>
+              
+                    </ul>
+              
+                  </div>
+              
+                </div>
+              
+                <div class="footer-bottom">
+              
+                  <div class="container">
+              
+                    <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+              
+                    <p class="copyright">
+                      Copyright &copy; <a href="#">Anon</a> all rights reserved.
+                    </p>
+              
+                  </div>
+              
+                </div>
+              </footer>
+              
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
